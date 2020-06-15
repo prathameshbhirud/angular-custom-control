@@ -1,0 +1,6 @@
+<p>ngModel Value:  {{outerCounterValue}}</p>
+<form #f="ngForm">
+  <app-counter-input name="counter" [(ngModel)]="outerCounterValue"></app-counter-input>
+</form>
+
+<pre>{{f.value | json}}</pre>
